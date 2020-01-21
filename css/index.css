@@ -11,31 +11,76 @@
     box-sizing: border-box;
 }
 
+
+.anyline{
+  text-decoration: none;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+    
 }
-
-.column{
-    float: left;
-    width: 25%;
-    padding: 0 10px;
+.imgfondo{
+    height: 100%;
+    width: 100%;
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
 }
-
-.row{margin: 0 -5px;}
+.tabla{
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.card{
+  margin: 10px;
+  padding: 20px;
+  width: 30%;
+  border-radius: 20px;
+  background-image: url(../../../assets/tarjeta.png);
+}
+.card:hover{
+  border: solid gray;
+  cursor: pointer;
+}
+.txtcard{
+  word-wrap: break-word;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 6mm;
+}
+.txtprice{
+  color: darkgreen;
+  font-size: 4mm;
+}
 
 /* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.Button{
+  font-weight: bold;
+  font-size: 4mm;
+  padding: 10px;
+  border-color: gray;
+  color: white;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-    margin-top: 20px;
+.MoneyBtn{
+  margin-right: 20px;
+  background-color: darkgreen; 
+}
+.CartBtn{
+  margin-left: 20px;
+    background-color: #333; 
+}
+.imgbtn{
+  margin:5px;
+  width: 25px;
 }
 
 @media screen and (max-width: 600px) {
@@ -43,6 +88,9 @@ body {
       width: 100%;
       display: block;
       margin-bottom: 20px;
+    }
+    .card{
+      width: 40%;
     }
 }
 
@@ -74,9 +122,9 @@ ul {
 
 
 .bar{
-  width:25%;display:inline;
+  width:25%;
+  display:inline;
 }
-
 .container {
   position: relative;
   text-align: center;
