@@ -1,65 +1,70 @@
 @charset "UTF-8";
-
-/* Container holding the image and the text */
+.container {
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(../imagenes/4.png);
+  background-size: cover;
+  position: fixed;
+  text-align: center;
+  color: white;
+  text-shadow: 2px  0px 0px black,
+               0px  2px 0px black,
+              -2px  0px 0px black,
+               0px -2px 0px black;
+}
+.title{
+  font-size: 20px;
+  position: absolute;
+  left: 40px;
+}
+.tzeltal{
+  font-size: 40px;
+  margin-top: 20px;
+  margin-left: 40%;
+}
+.letraTzeltal{
+  font-family: cursive;
+  font-variant-ligatures: normal;
+}
+.atributos{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 40%;
+  font-size: 30px;
+}
+.leftatr{
+  margin-right: 50px;
+}
+.rightatr{
+  margin-left: 50px;
+}
 .anyline{
   text-decoration: none;
+  color: white;
 }
-
-.anyline:hover{
-  background-color: saddlebrown;
-  padding: 2px;
+.bardown{
+  min-width: calc(100% - 80px);
+  position: absolute;
+  bottom: 0px;
+  margin: 30px;
+  text-align: center;
 }
-
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-  /* Bottom left text */
-  .bottom-left {
-    position: absolute;
-    bottom: -180px;
-    left: 16px;
-  }
-  
-  /* Top left text */
-  .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }
-  
-  /* Top right text */
-  .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-  }
-  
-  /* Bottom right text */
-  .bottom-right {
-    position: absolute;
-    bottom: -180px;
-    right: 16px;
-  }
-  
-  .bottom-centered {
-    position: absolute;
-    bottom: -180px;
-    right: 50%;
-  }
-
-  /* Centered text */
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .centered-top {
-    position: absolute;
-    top: 10%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-  }
+.links{
+  display: inline-block;
+  font-size: 30px;
+  text-shadow: 2px  0px 0px black,
+               0px  2px 0px black,
+              -2px  0px 0px black,
+               0px -2px 0px black;
+}
+.links:nth-child(1){
+  position: absolute;
+  left: 0px;
+}
+.links:nth-child(3){
+  position: absolute;
+  right: 0px;
+}
