@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+body{
+  font-family: cursive;
+}
 .txtcaja{
   max-width: 30%;
   text-align: center;
