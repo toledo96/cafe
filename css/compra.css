@@ -7,16 +7,19 @@ body{
   text-align: center;
   word-wrap: break-word;
 }
+.anyline{
+    text-decoration: none;
+    color: white;
+}
 .btnbuy:hover{
-  background-color: #333;
+  background-color: #33bb33;
 }
 .btnbuy{
   font-family: cursive;
   font-size: 10mm;
-  color: white;
   padding: 10px;
-  border-radius: 35px;
-  background: none;
+  border-radius: 15px;
+  background-color: #33ff33;
   border: none;
 }
 li{
@@ -81,14 +84,14 @@ li{
 
   .centered-left {
     position: absolute;
-    top: 12%;
+    top: 16%;
     left: 17%;
     transform: translate(-50%, -50%);
   }
 
   .centered-left2 {
     position: absolute;
-    top: 30%;
+    top: 37%;
     left: 15%;
     transform: translate(-50%, -50%);
   }

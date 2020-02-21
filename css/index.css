@@ -1,189 +1,48 @@
 @charset "UTF-8";
 
-.principal{
-    float: 0;
-    width: 100%;
-    height: 50%;
-}
 
-/* cards */
-*{
-    box-sizing: border-box;
-}
-
-
-.anyline{
-  text-decoration: none;
-}
-.anyline:hover{
-  background-color: saddlebrown;
-  padding: 2px;
-}
-body {
-  font-family: cursive;
-    background-color: #eee;
-    
-}
-.imgfondo{
+html{
     height: 100%;
-    width: 100%;
-    background-image: url(../imagenes/fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
 }
-.tabla{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-  max-width: 100%;
+.bardown{
+  min-width: calc(100% - 80px);
+  position: absolute;
+  bottom: 0px;
+  margin: 30px;
+  text-align: center;
 }
-.card{
-  margin: 10px;
-  padding: 20px;
-  width: 30%;
-  border-radius: 20px;
-  background-image: url(../../../assets/tarjeta.png);
+div{
+  color: white;
 }
-.card:hover{
-  border: solid gray;
-  cursor: pointer;
+.links{
+    
+  display: inline-block;
+  font-size: 30px;
+  text-shadow: 2px  0px 0px black,
+               0px  2px 0px black,
+              -2px  0px 0px black,
+               0px -2px 0px black;
 }
-.txtcard{
-  word-wrap: break-word;
-  font-family: cursive;
-  font-weight: bold;
-  font-size: 6mm;
+.links:nth-child(1){
+  position: absolute;
+  left: 0px;
 }
-.txtprice{
-  color: darkgreen;
-  font-size: 4mm;
+.links:nth-child(3){
+  position: absolute;
+  right: 0px;
+}
+.anyline{
+    text-decoration: none;
+    color: white;
 }
 
-/* Clear floats after the columns */
-.Button{
-  font-weight: bold;
-  font-size: 4mm;
-  padding: 10px;
-  border-color: gray;
-  color: white;
-  border-radius: 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.MoneyBtn{
-  margin-right: 20px;
-  background-color: darkgreen; 
-}
-.CartBtn{
-  margin-left: 20px;
-    background-color: #333; 
-}
-.imgbtn{
-  margin:5px;
-  width: 25px;
+body{
+    resize:both;
+    overflow:hidden;
+    width:100%;
+    height:100%;
+    background-size:100% 100%;
+	background-image: url(../imagenes/index.jpeg);
 }
 
 @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-    .card{
-      width: 40%;
-    }
-}
-
-/* navbar */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
-
-
-.bar{
-  width:25%;
-  display:inline;
-}
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-/* Bottom left text */
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
-
-/* Top left text */
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
-
-/* Top right text */
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
-
-/* Bottom right text */
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
-
-.bottom-centered {
-  position: absolute;
-  bottom: 8px;
-  right: 50%;
-}
-
-/* Centered text */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.centered-top {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-a:hover{
-  background-color: #111;
-}
